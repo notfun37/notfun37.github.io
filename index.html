@@ -1,68 +1,85 @@
 <!DOCTYPE html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>Lighter Demo</title>
+        <title>Demo</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     </head>
 
     <header>
-        <img src="./images/logo.png" alt="Logo">
-        <p><b>Here I'll tell you how to create the first website</b></p>
+        <nav>
+            <a href="index.html"><img src="./images/logo.png" alt="Logo" height="70"></a><br>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Settings</a>
+            <a href="page2.html">History</a>
+            <a href="page3.html">My account</a>
+        </nav>
+
+        <p><h1>Home</h1></p>
+        
     </header>
     
     <body>
         <main>
-            <div>
+            <section>
+                <h2>Parameters</h2>
+                <ul>
+                    <li>Power</li>
+                    <li>Voltage</li>
+                    <li>Current</li>
+                </ul>
+            </section>
 
-                <a href="http://www.google.com" target="_blank">
-                </a>
-                <br>Ok, so let's start. First of all I added head section, created structure of the file. <br>
-                After this I added social media links below. This is instagram and facebook group link. <br>
-                Also, <a href="http://www.google.com" target="_blank">here</a> you can find the google page. <br>
+            <section>
+                <h2>Power usage</h2>
+                <meter min="0" max="100" value="35"></meter> Grid  <br>
+                <meter min="0" max="100" value="80"></meter> PV power  <br>
+                <meter min="0" max="100" value="10"></meter> Genset  <br>
+            </section>
 
+            <section>
+                <h2>Detailed parameters</h2><br>
                 <hr>
-                <code>
-                    Here is the example of the code
-                </code>
-                <button>
-                    Click here to add the scheme
-                </button>
-                <meter min="0" max="100" value="75">
-                    What is the meter?
-                </meter>
-                <progress>
-                    Proggress is really fun!
-                </progress>
-
+                <details>
+                    <summary>Power by phases</summary>
+                    <p>
+                        <ul>
+                            <li>L1 power</li>
+                            <li>L2 power</li>
+                            <li>L3 power</li>
+                        </ul>
+                    </p>
+                </details>
                 <hr>
-                <table>
-                    <tr>
-                        <th colspan="4">PV</th>
-                    </tr>
-                    <tr>
-                        <th>Phase</th><th>Voltage</th><th>Power</th><th>Frequency</th>
-                    </tr>
-                    <tr>
-                        <td>L1</td><td>220</td><td>50</td><td rowspan="3">50</td>
-                    </tr>
-                    <tr>
-                        <td>L2</td><td>230</td><td>55</td>
-                    </tr>
-                    <tr>
-                        <td>L3</td><td>240</td><td>37</td>
-                    </tr>
-                    
+                <details>
+                    <summary>Voltage by phases</summary>
+                    <p>
+                        <ul>
+                            <li>L1 voltage</li>
+                            <li>L2 voltage</li>
+                            <li>L3 voltage</li>
+                        </ul>
+                    </p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Current by phases</summary>
+                    <p>
+                        <ul>
+                            <li>L1 current</li>
+                            <li>L2 current</li>
+                            <li>L3 current</li>
+                        </ul>
+                    </p>
+                </details>
+                <hr>
 
-                </table>
+                
+            </section>
+                
 
-            </div>
-            
-        </main>
-
+           
         <footer>
-            <p>What is footer?</p>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
+            <p>To be continued...</p>
         </footer>
     </body>
